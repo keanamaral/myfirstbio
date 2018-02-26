@@ -1,0 +1,54 @@
+/*defines the appearance of the entire body*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+/*defines the appearance of only h1 which is "my bio"*/
+h1{
+    color: lightgray;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 28px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+/*defines the appearance of the links*/
+a {
+    color: crimson; /*set color of links to crimson*/
+}
+
+/*defines the appearance of the class = "container"*/
+/*note that Div contains 2 sections within it*/
+.container {
+    width: 1024px;  /*setting width of div class container*/
+        /*see what happens when you replace width: 1400px above to
+        width: 90% i.e. go from fixed width to floating width 
+        relative to screen size*/
+    margin: 0 auto; /*take away any margin and autocenter everything*/
+}
+
+/*now get items next to each other using floats*/
+#main-bio{
+    float: left;
+    width: 60%;
+}
+#bio-image{
+    float: left;
+    margin-right: 20px;
+    width: 200px; height: 200px;
+}
+#contact-info{
+    float: left;    
+    width: 40%;
+}
